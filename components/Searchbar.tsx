@@ -13,7 +13,7 @@ interface SearchBarProps {
 export default function Searchbar({ value, onChangeText, onSearch, onClean, placeholder = "Search..." }: SearchBarProps) {
 
   return (
-  <View className="w-full mb-4 flex-row items-center border border-gray-300 rounded-lg px-3 overflow-hidden">
+  <View className="w-full mb-4 flex-row items-center text-white border border-gray-300 rounded-full px-3 overflow-hidden mt-5">
     <Pressable className="p-2" onPress={() => {onSearch(value)}}>
         <Search size={20} color="#666" />
     </Pressable>
@@ -23,7 +23,7 @@ export default function Searchbar({ value, onChangeText, onSearch, onClean, plac
         onSubmitEditing={() => onSearch(value)}
         returnKeyType="search"
         placeholder={placeholder}
-        className="flex-1 p-2"
+        className="flex-1 p-2 text-white"
         placeholderTextColor="#999"
     />
     {(value != "" && value) ? (<Pressable className="p-2" onPress={() => {onClean()}}>
