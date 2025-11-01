@@ -7,6 +7,12 @@
     "scheme": "wavo",
     "userInterfaceStyle": "dark",
     "newArchEnabled": true,
+    "icon": "./assets/images/icon-wavo.png",
+    "splash": {
+      "image": "./assets/images/splash-wavo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#141B1E"
+    },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.leo1910.wavo",
